@@ -4,8 +4,8 @@
   # Which nixpkgs channel to use.
   channel = "stable-24.05"; # or "unstable"
   # Use https://search.nixos.org/packages to find packages
-  packages = [ pkgs.nodejs_20 ];
-  # Sets environment variables in the workspace
+
+ packages = [ pkgs.nodejs_20 pkgs.openssh ];  # Sets environment variables in the workspace
   env = { };
   idx = let
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
